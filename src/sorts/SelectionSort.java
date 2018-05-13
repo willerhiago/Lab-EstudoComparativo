@@ -4,7 +4,13 @@ public class SelectionSort {
 	
 	public int comparacoes = 0;
 	public long tempo;
-
+	public int trocas = 0;
+	
+	public int getTrocas() {
+		int result = trocas;
+		trocas = 0;
+		return result;
+	}
 	 public void sort(int arr[])
 	    {
 		 	long inicio = System.currentTimeMillis();
@@ -23,6 +29,7 @@ public class SelectionSort {
 	            }
 	            // Swap the found minimum element with the first
 	            // element
+	            trocas++;
 	            int temp = arr[min_idx];
 	            arr[min_idx] = arr[i];
 	            arr[i] = temp;
