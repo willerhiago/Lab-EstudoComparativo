@@ -4,7 +4,13 @@ public class QuickSort {
 
 	public int comparacoes = 0;
 	public long tempo = 0;
-
+	public int trocas = 0;
+	
+	public int getTrocas() {
+		int result = trocas;
+		trocas = 0;
+		return result;
+	}
 	/* This function takes last element as pivot,
     places the pivot element at its correct
     position in sorted array, and places all
@@ -23,7 +29,7 @@ public class QuickSort {
             if (comparacoes++ > -1 && arr[j] <= pivot)
             {
                 i++;
- 
+                trocas++;
                 // swap arr[i] and arr[j]
                 int temp = arr[i];
                 arr[i] = arr[j];
@@ -32,6 +38,7 @@ public class QuickSort {
         }
  
         // swap arr[i+1] and arr[high] (or pivot)
+        trocas++;
         int temp = arr[i+1];
         arr[i+1] = arr[high];
         arr[high] = temp;

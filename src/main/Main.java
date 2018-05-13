@@ -7,31 +7,30 @@ public class Main {
     public static void main(String[] args) {
         Vetor vet = new Vetor();
 
-        int n = 10;
+        int n = 100;
 
-        for (int i = 0; i < 10; i++) {
-            long[][] resultado = Bubble(n);
-            System.out.println("\nMelhor caso\nCompara��es: " + resultado[0][0] + " Tempo: " + resultado[0][1]);
-            System.out.println("\nMédio caso\nCompara��es: " + resultado[1][0] + " Tempo: " + resultado[1][1]);
-            System.out.println("\nPior caso\nCompara��es: " + resultado[2][0] + " Tempo: " + resultado[2][1]);
-            System.out.println("----------------------------------------------------------------------------");
-            n = n * 10;
-        }
+//        for (int i = 0; i < 10; i++) {
+//            long[][] resultado = Bubble(n);
+//            System.out.println("\nMelhor caso\nComparacoes: " + resultado[0][0] + " Tempo: " + resultado[0][1]);
+//            System.out.println("\nMedio caso\nComparacoes: " + resultado[1][0] + " Tempo: " + resultado[1][1]);
+//            System.out.println("\nPior caso\nComparacoes: " + resultado[2][0] + " Tempo: " + resultado[2][1]);
+//            System.out.println("----------------------------------------------------------------------------");
+//            n = n * 10;
+//        }
 
-//               arrayRandom = vet.Vetor(n);
-//		 arrayPior = vet.VetorPiorCaso(n);
-//		 arrayMelhor = vet.VetorMelhorCaso(n);
-//		
-//		 SelectionSort selec = new SelectionSort();
-//		 System.out.println("\n-----------Selection----------");
-//		 selec.sort(arrayMelhor);
-//		 System.out.println("\nMelhor caso\nCompara��es: "+ selec.getComparacoes()+" Tempo: "+ selec.getTempo());
-//		 selec.sort(arrayRandom);
-//		 System.out.println("\nMédio caso\nCompara��es: "+ selec.getComparacoes()+" Tempo: "+ selec.getTempo());
-//		 selec.sort(arrayPior);
-//		 System.out.println("\nPior caso\nCompara��es: "+ selec.getComparacoes()+" Tempo: "+ selec.getTempo());
-//		 System.out.println("----------------------------------------------------------------------------");
-//		
+         int[] arrayRandom = vet.Vetor(n);
+         int[] arrayPior = vet.VetorPiorCaso(n);
+		 int[] arrayMelhor = vet.VetorMelhorCaso(n);	
+		 SelectionSort selec = new SelectionSort();
+		 System.out.println("\n-----------Selection----------");
+		 selec.sort(arrayMelhor);
+		 System.out.println("\nMelhor caso\nCompara��es: "+ selec.getComparacoes()+" Tempo: "+ selec.getTempo()+ " Trocas: "+ selec.getTrocas());
+		 selec.sort(arrayRandom);
+		 System.out.println("\nMédio caso\nCompara��es: "+ selec.getComparacoes()+" Tempo: "+ selec.getTempo()+ " Trocas: "+ selec.getTrocas());
+		 selec.sort(arrayPior);
+		 System.out.println("\nPior caso\nCompara��es: "+ selec.getComparacoes()+" Tempo: "+ selec.getTempo()+ " Trocas: "+ selec.getTrocas());
+		 System.out.println("----------------------------------------------------------------------------");
+		
 //		 arrayRandom = vet.Vetor(n);
 //		 arrayPior = vet.VetorPiorCaso(n);
 //		 arrayMelhor = vet.VetorMelhorCaso(n);
@@ -108,7 +107,7 @@ public class Main {
         int arrayPior[] = vet.VetorPiorCaso(n);
         int arrayMelhor[] = vet.VetorMelhorCaso(n);
 
-        int comparação = 0;
+        int comparacao = 0;
         long tempo;
         long[] tempoVet = new long[3];
         int[] comp = new int[3];
@@ -116,21 +115,21 @@ public class Main {
         
         for (int i = 0; i < 10; i++) {
             bubble.bubbleSort(arrayMelhor);
-            comparação = bubble.getComparacoes();
+            comparacao = bubble.getComparacoes();
             tempo = bubble.getTempo();
-            comp[0] = comp[0] + comparação;
+            comp[0] = comp[0] + comparacao;
             tempoVet[0] = tempoVet[0] + tempo;
 
             bubble.bubbleSort(arrayRandom);
-            comparação = bubble.getComparacoes();
+            comparacao = bubble.getComparacoes();
             tempo = bubble.getTempo();
-            comp[1] = comp[1] + comparação;
+            comp[1] = comp[1] + comparacao;
             tempoVet[1] = tempoVet[1] + tempo;
 
             bubble.bubbleSort(arrayPior);
-            comparação = bubble.getComparacoes();
+            comparacao = bubble.getComparacoes();
             tempo = bubble.getTempo();
-            comp[2] = comp[2] + comparação;
+            comp[2] = comp[2] + comparacao;
             tempoVet[2] = tempoVet[2] + tempo;
         }
 

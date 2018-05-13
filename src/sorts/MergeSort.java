@@ -4,6 +4,13 @@ public class MergeSort {
 
 	public int comparacoes = 0;
 	public long tempo = 0;
+	public int trocas = 0;
+	
+	public int getTrocas() {
+		int result = trocas;
+		trocas = 0;
+		return result;
+	}
 	
 	private void mSort(int[] array)
 	    {
@@ -42,11 +49,13 @@ public class MergeSort {
 	            	
 	                if(comparacoes++ > -1 && left[i] < right[j])
 	                {
-	                    array[k] = left[i];
+	                	trocas++;
+	                	array[k] = left[i];
 	                    i++;
 	                }
 	                else
-	                {
+	                {   
+	                	trocas++;
 	                    array[k] = right[j];
 	                    j++;
 	                }

@@ -4,7 +4,14 @@ public class HeapSort {
 	
 	public int comparacoes;
 	public long tempo;
+	public int trocas = 0;
 	
+	public int getTrocas() {
+		int result = trocas;
+		trocas = 0;
+		return result;
+	}
+
 	public int getComparacoes() {
 		int result = comparacoes;
 		comparacoes = 0;
@@ -61,7 +68,8 @@ public class HeapSort {
         // If largest is not root
         comparacoes++;
         if (largest != i)
-        {
+        {	
+        	trocas++;
             int swap = arr[i];
             arr[i] = arr[largest];
             arr[largest] = swap;

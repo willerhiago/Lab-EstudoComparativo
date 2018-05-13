@@ -4,7 +4,13 @@ public class InsertionSort {
 
 	public int comparacoes = 0;
 	public long tempo = 0;
+	public int trocas = 0;
 	
+	public int getTrocas() {
+		int result = trocas;
+		trocas = 0;
+		return result;
+	}
 	/*Function to sort array using insertion sort*/
     public void sort(int arr[])
     {
@@ -20,7 +26,8 @@ public class InsertionSort {
                of their current position */
             
             while (++comparacoes >= -1 && j>=0 && arr[j] > key)
-            {
+            {	
+            	trocas++;
                 arr[j+1] = arr[j];
                 j = j-1;
             }

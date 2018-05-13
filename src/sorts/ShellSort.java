@@ -4,7 +4,13 @@ public class ShellSort {
 
 	private int comparacoes = 0;
 	private long tempo = 0;
+	public int trocas = 0;
 	
+	public int getTrocas() {
+		int result = trocas;
+		trocas = 0;
+		return result;
+	}
     public int getComparacoes() {
 		int result = comparacoes;
 		comparacoes = 0;
@@ -49,6 +55,7 @@ public class ShellSort {
                 int j;
             	
                 for (j = i;++comparacoes > -1 && j >= gap && arr[j - gap] > temp; j -= gap) {
+                	trocas++;
                 	arr[j] = arr[j - gap];
                     
                 }
