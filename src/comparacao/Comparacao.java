@@ -189,7 +189,7 @@ public class Comparacao {
         int arrayPior[] = vet.VetorPiorCaso(tamArray);
         int arrayMelhor[] = vet.VetorMelhorCaso(tamArray);
     	
-        System.out.println("--------------------------Insertion------------------------");
+        System.out.println("--------------------------Merge------------------------");
         System.out.println("Tamanho Array: " + tamArray );
         merge.sort(arrayMelhor);
         System.out.println("\nMelhorCaso\nComparacoes- Media: "+merge.getComparacoes()+" Desvio: 0");
@@ -243,7 +243,7 @@ public class Comparacao {
         int arrayPior[] = vet.VetorPiorCaso(tamArray);
         int arrayMelhor[] = vet.VetorMelhorCaso(tamArray);
     	
-        System.out.println("--------------------------Insertion------------------------");
+        System.out.println("--------------------------Quick------------------------");
         System.out.println("Tamanho Array: " + tamArray );
         quick.sort(arrayMelhor,0,tamArray);
         System.out.println("\nMelhorCaso\nComparacoes- Media: "+quick.getComparacoes()+" Desvio: 0");
@@ -297,7 +297,7 @@ public class Comparacao {
         int arrayPior[] = vet.VetorPiorCaso(tamArray);
         int arrayMelhor[] = vet.VetorMelhorCaso(tamArray);
     	
-        System.out.println("--------------------------Insertion------------------------");
+        System.out.println("--------------------------Selection------------------------");
         System.out.println("Tamanho Array: " + tamArray );
         selection.sort(arrayMelhor);
         System.out.println("\nMelhorCaso\nComparacoes- Media: "+selection.getComparacoes()+" Desvio: 0");
@@ -351,7 +351,7 @@ public class Comparacao {
         int arrayPior[] = vet.VetorPiorCaso(tamArray);
         int arrayMelhor[] = vet.VetorMelhorCaso(tamArray);
     	
-        System.out.println("--------------------------Insertion------------------------");
+        System.out.println("--------------------------Shell------------------------");
         System.out.println("Tamanho Array: " + tamArray );
         shell.sort(arrayMelhor);
         System.out.println("\nMelhorCaso\nComparacoes- Media: "+shell.getComparacoes()+" Desvio: 0");
