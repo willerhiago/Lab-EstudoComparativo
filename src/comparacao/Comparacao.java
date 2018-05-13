@@ -3,7 +3,16 @@
  * To change this template file, choose Tools | Templates
  * and open the template in the editor.
  */
-package sorts;
+package comparacao;
+
+import sorts.BubbleSort;
+import sorts.HeapSort;
+import sorts.InsertionSort;
+import sorts.MergeSort;
+import sorts.QuickSort;
+import sorts.SelectionSort;
+import sorts.ShellSort;
+import sorts.Vetor;
 
 /**
  *
@@ -222,7 +231,7 @@ public class Comparacao {
         return media(comp, tempoVet);
     }
 
-    public long[][] Bubble(int n) {
+    public void Bubble(int n) {
         Vetor vet = new Vetor();
 
         int arrayRandom[] = vet.Vetor(n);
@@ -230,31 +239,33 @@ public class Comparacao {
         int arrayMelhor[] = vet.VetorMelhorCaso(n);
 
         int comparacao = 0;
-        long tempo;
-        long[] tempoVet = new long[3];
-        int[] comp = new int[3];
+        int tempo;
+        int troca = 0;
+        int[] tempoVet = new int[100];
+        int[] comp = new int[100];
+        int[] trocas = new int[100];
         BubbleSort bubble = new BubbleSort();
-
+        
         for (int i = 0; i < 100; i++) {
             bubble.bubbleSort(arrayMelhor);
             comparacao = bubble.getComparacoes();
             tempo = bubble.getTempo();
-            comp[0] = comp[0] + comparacao;
-            tempoVet[0] = tempoVet[0] + tempo;
-
-            bubble.bubbleSort(arrayRandom);
-            comparacao = bubble.getComparacoes();
-            tempo = bubble.getTempo();
-            comp[1] = comp[1] + comparacao;
-            tempoVet[1] = tempoVet[1] + tempo;
-
-            bubble.bubbleSort(arrayPior);
-            comparacao = bubble.getComparacoes();
-            tempo = bubble.getTempo();
-            comp[2] = comp[2] + comparacao;
-            tempoVet[2] = tempoVet[2] + tempo;
+            troca = bubble.getTrocas();
+            
+            comp[i] = comparacao;
+            tempoVet[i] = tempo;
+            trocas[i] = troca;
         }
-        return media(comp, tempoVet);
+        
+        ComparacaoTeste compTest = new ComparacaoTeste();  
+        compTest.calculaMediaEDesvio(comp);
+        System.out.println("Comparaçoes Media: "+compTest.getMedia()+" Desvio: "+compTest.getDesvioPadrao());
+        compTest.calculaMediaEDesvio(tempoVet);
+        System.out.println("Tempo Media: "+compTest.getMedia()+" Desvio: "+compTest.getDesvioPadrao());
+        compTest.calculaMediaEDesvio(trocas);
+        System.out.println("Troca Media: "+compTest.getMedia()+" Desvio: "+compTest.getDesvioPadrao());
+        
+        
     }
 
     private long[][] media(int[] comparacao, long[] tempo) {

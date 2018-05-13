@@ -1,4 +1,4 @@
-package sorts;
+package comparacao;
 
 public class ComparacaoTeste {
 	
@@ -18,7 +18,7 @@ public class ComparacaoTeste {
 		this.calculaDesvio();
 	}
 	
-	public void calculaDesvio() {
+	private void calculaDesvio() {
 		double somaVariancia = 0;
 		int variacao;
 		
