@@ -3,14 +3,14 @@ package comparacao;
 public class Calculo {
 	
 	private int[] valores;
-	private int media;
-	private int desvioPadrao;
-	private int qntElem;
+	private long media;
+	private long desvioPadrao;
+	private long qntElem;
 	
 	public void calculaMediaEDesvio(int[] valores) {
 		this.valores = valores;
 		this.qntElem = valores.length;
-		int soma = 0;
+		long soma = 0;
 		for(int i = 0; i < qntElem;i++){
 			soma += valores[i];
 		}
@@ -20,14 +20,14 @@ public class Calculo {
 	
 	private void calculaDesvio() {
 		double somaVariancia = 0;
-		int variacao;
+		long variacao;
 		
 		for(int i = 0; i < qntElem;i++){
 			variacao = valores[i] - this.media;
-			somaVariancia += (int)Math.pow(variacao,2);
+			somaVariancia += (long)Math.pow(variacao,2);
 			
 		}
-		this.desvioPadrao =  (int)Math.sqrt(somaVariancia/(qntElem - 1)); 
+		this.desvioPadrao =  (long)Math.sqrt(somaVariancia/(qntElem - 1)); 
 	}
 
 	
@@ -36,15 +36,15 @@ public class Calculo {
 		return valores;
 	}
 
-	public int getMedia() {
+	public long getMedia() {
 		return media;
 	}
 
-	public int getDesvioPadrao() {
+	public long getDesvioPadrao() {
 		return desvioPadrao;
 	}
 
-	public int getQntElem() {
+	public long getQntElem() {
 		return qntElem;
 	}
 	

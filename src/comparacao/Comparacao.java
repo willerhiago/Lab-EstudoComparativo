@@ -54,16 +54,16 @@ public class Comparacao {
      	}
      	
      	calculo.calculaMediaEDesvio(comparacoes);
-     	int mediaComp = calculo.getMedia();
-     	int desvioComp = calculo.getDesvioPadrao();
+     	long mediaComp = calculo.getMedia();
+     	long desvioComp = calculo.getDesvioPadrao();
      	
      	calculo.calculaMediaEDesvio(tempos);
-     	int mediaTempo = calculo.getMedia();
-     	int desvioTempo = calculo.getDesvioPadrao();
+     	long mediaTempo = calculo.getMedia();
+     	long desvioTempo = calculo.getDesvioPadrao();
      	
      	calculo.calculaMediaEDesvio(trocas);
-     	int mediaTrocas = calculo.getMedia();
-     	int desvioTrocas = calculo.getDesvioPadrao();
+     	long mediaTrocas = calculo.getMedia();
+     	long desvioTrocas = calculo.getDesvioPadrao();
      	
      	System.out.println("\nMédioCaso\nComparacoes- Media: "+mediaComp+" Desvio: "+desvioComp);
      	System.out.println("Tempo- Media: "+mediaTempo+" Desvio: "+desvioTempo);
@@ -108,16 +108,16 @@ public class Comparacao {
      	}
      	
      	calculo.calculaMediaEDesvio(comparacoes);
-     	int mediaComp = calculo.getMedia();
-     	int desvioComp = calculo.getDesvioPadrao();
+     	long mediaComp = calculo.getMedia();
+     	long desvioComp = calculo.getDesvioPadrao();
      	
      	calculo.calculaMediaEDesvio(tempos);
-     	int mediaTempo = calculo.getMedia();
-     	int desvioTempo = calculo.getDesvioPadrao();
+     	long mediaTempo = calculo.getMedia();
+     	long desvioTempo = calculo.getDesvioPadrao();
      	
      	calculo.calculaMediaEDesvio(trocas);
-     	int mediaTrocas = calculo.getMedia();
-     	int desvioTrocas = calculo.getDesvioPadrao();
+     	long mediaTrocas = calculo.getMedia();
+     	long desvioTrocas = calculo.getDesvioPadrao();
      	
      	System.out.println("\nMédioCaso\nComparacoes- Media: "+mediaComp+" Desvio: "+desvioComp);
      	System.out.println("Tempo- Media: "+mediaTempo+" Desvio: "+desvioTempo);
@@ -162,16 +162,16 @@ public class Comparacao {
      	}
      	
      	calculo.calculaMediaEDesvio(comparacoes);
-     	int mediaComp = calculo.getMedia();
-     	int desvioComp = calculo.getDesvioPadrao();
+     	long mediaComp = calculo.getMedia();
+     	long desvioComp = calculo.getDesvioPadrao();
      	
      	calculo.calculaMediaEDesvio(tempos);
-     	int mediaTempo = calculo.getMedia();
-     	int desvioTempo = calculo.getDesvioPadrao();
+     	long mediaTempo = calculo.getMedia();
+     	long desvioTempo = calculo.getDesvioPadrao();
      	
      	calculo.calculaMediaEDesvio(trocas);
-     	int mediaTrocas = calculo.getMedia();
-     	int desvioTrocas = calculo.getDesvioPadrao();
+     	long mediaTrocas = calculo.getMedia();
+     	long desvioTrocas = calculo.getDesvioPadrao();
      	
      	System.out.println("\nMédioCaso\nComparacoes- Media: "+mediaComp+" Desvio: "+desvioComp);
      	System.out.println("Tempo- Media: "+mediaTempo+" Desvio: "+desvioTempo);
@@ -216,16 +216,16 @@ public class Comparacao {
      	}
      	
      	calculo.calculaMediaEDesvio(comparacoes);
-     	int mediaComp = calculo.getMedia();
-     	int desvioComp = calculo.getDesvioPadrao();
+     	long mediaComp = calculo.getMedia();
+     	long desvioComp = calculo.getDesvioPadrao();
      	
      	calculo.calculaMediaEDesvio(tempos);
-     	int mediaTempo = calculo.getMedia();
-     	int desvioTempo = calculo.getDesvioPadrao();
+     	long mediaTempo = calculo.getMedia();
+     	long desvioTempo = calculo.getDesvioPadrao();
      	
      	calculo.calculaMediaEDesvio(trocas);
-     	int mediaTrocas = calculo.getMedia();
-     	int desvioTrocas = calculo.getDesvioPadrao();
+     	long mediaTrocas = calculo.getMedia();
+     	long desvioTrocas = calculo.getDesvioPadrao();
      	
      	System.out.println("\nMédioCaso\nComparacoes- Media: "+mediaComp+" Desvio: "+desvioComp);
      	System.out.println("Tempo- Media: "+mediaTempo+" Desvio: "+desvioTempo);
@@ -270,16 +270,16 @@ public class Comparacao {
      	}
      	
      	calculo.calculaMediaEDesvio(comparacoes);
-     	int mediaComp = calculo.getMedia();
-     	int desvioComp = calculo.getDesvioPadrao();
+     	long mediaComp = calculo.getMedia();
+     	long desvioComp = calculo.getDesvioPadrao();
      	
      	calculo.calculaMediaEDesvio(tempos);
-     	int mediaTempo = calculo.getMedia();
-     	int desvioTempo = calculo.getDesvioPadrao();
+     	long mediaTempo = calculo.getMedia();
+     	long desvioTempo = calculo.getDesvioPadrao();
      	
      	calculo.calculaMediaEDesvio(trocas);
-     	int mediaTrocas = calculo.getMedia();
-     	int desvioTrocas = calculo.getDesvioPadrao();
+     	long mediaTrocas = calculo.getMedia();
+     	long desvioTrocas = calculo.getDesvioPadrao();
      	
      	System.out.println("\nMédioCaso\nComparacoes- Media: "+mediaComp+" Desvio: "+desvioComp);
      	System.out.println("Tempo- Media: "+mediaTempo+" Desvio: "+desvioTempo);
@@ -324,16 +324,16 @@ public class Comparacao {
      	}
      	
      	calculo.calculaMediaEDesvio(comparacoes);
-     	int mediaComp = calculo.getMedia();
-     	int desvioComp = calculo.getDesvioPadrao();
+     	long mediaComp = calculo.getMedia();
+     	long desvioComp = calculo.getDesvioPadrao();
      	
      	calculo.calculaMediaEDesvio(tempos);
-     	int mediaTempo = calculo.getMedia();
-     	int desvioTempo = calculo.getDesvioPadrao();
+     	long mediaTempo = calculo.getMedia();
+     	long desvioTempo = calculo.getDesvioPadrao();
      	
      	calculo.calculaMediaEDesvio(trocas);
-     	int mediaTrocas = calculo.getMedia();
-     	int desvioTrocas = calculo.getDesvioPadrao();
+     	long mediaTrocas = calculo.getMedia();
+     	long desvioTrocas = calculo.getDesvioPadrao();
      	
      	System.out.println("\nMédioCaso\nComparacoes- Media: "+mediaComp+" Desvio: "+desvioComp);
      	System.out.println("Tempo- Media: "+mediaTempo+" Desvio: "+desvioTempo);
@@ -378,16 +378,16 @@ public class Comparacao {
      	}
      	
      	calculo.calculaMediaEDesvio(comparacoes);
-     	int mediaComp = calculo.getMedia();
-     	int desvioComp = calculo.getDesvioPadrao();
+     	long mediaComp = calculo.getMedia();
+     	long desvioComp = calculo.getDesvioPadrao();
      	
      	calculo.calculaMediaEDesvio(tempos);
-     	int mediaTempo = calculo.getMedia();
-     	int desvioTempo = calculo.getDesvioPadrao();
+     	long mediaTempo = calculo.getMedia();
+     	long desvioTempo = calculo.getDesvioPadrao();
      	
      	calculo.calculaMediaEDesvio(trocas);
-     	int mediaTrocas = calculo.getMedia();
-     	int desvioTrocas = calculo.getDesvioPadrao();
+     	long mediaTrocas = calculo.getMedia();
+     	long desvioTrocas = calculo.getDesvioPadrao();
      	
      	System.out.println("\nMédioCaso\nComparacoes- Media: "+mediaComp+" Desvio: "+desvioComp);
      	System.out.println("Tempo- Media: "+mediaTempo+" Desvio: "+desvioTempo);
