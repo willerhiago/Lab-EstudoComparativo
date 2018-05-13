@@ -43,8 +43,8 @@ public class InsertionSort {
 		return result;
 	}
 
-	public long getTempo() {
-		return tempo;
+	public int getTempo() {
+		return (int)tempo;
 	}
 
 	/* A utility function to print array of size n*/

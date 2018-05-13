@@ -44,8 +44,8 @@ public class SelectionSort {
 		return result;
 	}
 
-	public long getTempo() {
-		return tempo;
+	public int getTempo() {
+		return (int)tempo;
 	}
 
 	// Prints the array

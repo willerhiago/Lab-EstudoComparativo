@@ -52,8 +52,8 @@ public class QuickSort {
 		return result;
 	}
 
-	public long getTempo() {
-		return tempo;
+	public int getTempo() {
+		return (int)tempo;
 	}
 
 	/* The main function that implements QuickSort()

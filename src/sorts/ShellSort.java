@@ -17,8 +17,8 @@ public class ShellSort {
 		return result;
 	}
 
-	public long getTempo() {
-		return tempo;
+	public int getTempo() {
+		return (int)tempo;
 	}
 
 	/* An utility function to print array of size n*/

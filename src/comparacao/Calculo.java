@@ -1,10 +1,10 @@
 package comparacao;
 
-public class ComparacaoTeste {
+public class Calculo {
 	
 	private int[] valores;
 	private int media;
-	private double desvioPadrao;
+	private int desvioPadrao;
 	private int qntElem;
 	
 	public void calculaMediaEDesvio(int[] valores) {
@@ -27,7 +27,7 @@ public class ComparacaoTeste {
 			somaVariancia += (int)Math.pow(variacao,2);
 			
 		}
-		this.desvioPadrao =  Math.sqrt(somaVariancia/(qntElem - 1)); 
+		this.desvioPadrao =  (int)Math.sqrt(somaVariancia/(qntElem - 1)); 
 	}
 
 	
@@ -40,7 +40,7 @@ public class ComparacaoTeste {
 		return media;
 	}
 
-	public double getDesvioPadrao() {
+	public int getDesvioPadrao() {
 		return desvioPadrao;
 	}
 

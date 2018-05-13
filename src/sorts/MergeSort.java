@@ -83,8 +83,8 @@ public class MergeSort {
 		return result;
 	}
 
-	public long getTempo() {
-		return tempo;
+	public int getTempo() {
+		return (int)tempo;
 	}
 	
 	public void sort(int[] array) {
