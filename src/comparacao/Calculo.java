@@ -13,7 +13,6 @@ public class Calculo {
 		long soma = 0;
 		for(int i = 0; i < qntElem;i++){
 			soma += valores[i];
-			System.out.println(soma);
 		}
 		this.media = (soma/qntElem);
 		this.calculaDesvio();
