@@ -41,9 +41,9 @@ public class Comparacao {
      	
      	
      	
-     	int tempos[] = new int[n];
-     	int comparacoes[] = new int[n];
-     	int trocas[] = new int[n];
+     	long tempos[] = new long[n];
+     	long comparacoes[] = new long[n];
+     	long trocas[] = new long[n];
      	
      	for(int i = 0;i < n; i++) {
             arrayRandom = vet.Vetor(tamArray);
@@ -52,6 +52,7 @@ public class Comparacao {
             comparacoes[i] = bubble.getComparacoes();
             trocas[i] = bubble.getTrocas();
      	}
+     	
      	
      	calculo.calculaMediaEDesvio(comparacoes);
      	long mediaComp = calculo.getMedia();
@@ -95,9 +96,9 @@ public class Comparacao {
      	
      	
      	
-     	int tempos[] = new int[n];
-     	int comparacoes[] = new int[n];
-     	int trocas[] = new int[n];
+     	long tempos[] = new long[n];
+     	long comparacoes[] = new long[n];
+     	long trocas[] = new long[n];
      	
      	for(int i = 0;i < n; i++) {
             arrayRandom = vet.Vetor(tamArray);
@@ -149,9 +150,9 @@ public class Comparacao {
      	
      	
      	
-     	int tempos[] = new int[n];
-     	int comparacoes[] = new int[n];
-     	int trocas[] = new int[n];
+     	long tempos[] = new long[n];
+     	long comparacoes[] = new long[n];
+     	long trocas[] = new long[n];
      	
      	for(int i = 0;i < n; i++) {
             arrayRandom = vet.Vetor(tamArray);
@@ -203,9 +204,9 @@ public class Comparacao {
      	
      	
      	
-     	int tempos[] = new int[n];
-     	int comparacoes[] = new int[n];
-     	int trocas[] = new int[n];
+     	long tempos[] = new long[n];
+     	long comparacoes[] = new long[n];
+     	long trocas[] = new long[n];
      	
      	for(int i = 0;i < n; i++) {
             arrayRandom = vet.Vetor(tamArray);
@@ -257,9 +258,9 @@ public class Comparacao {
      	
      	
      	
-     	int tempos[] = new int[n];
-     	int comparacoes[] = new int[n];
-     	int trocas[] = new int[n];
+     	long tempos[] = new long[n];
+     	long comparacoes[] = new long[n];
+     	long trocas[] = new long[n];
      	
      	for(int i = 0;i < n; i++) {
             arrayRandom = vet.Vetor(tamArray);
@@ -311,9 +312,9 @@ public class Comparacao {
      	
      	
      	
-     	int tempos[] = new int[n];
-     	int comparacoes[] = new int[n];
-     	int trocas[] = new int[n];
+     	long tempos[] = new long[n];
+     	long comparacoes[] = new long[n];
+     	long trocas[] = new long[n];
      	
      	for(int i = 0;i < n; i++) {
             arrayRandom = vet.Vetor(tamArray);
@@ -365,9 +366,9 @@ public class Comparacao {
      	
      	
      	
-     	int tempos[] = new int[n];
-     	int comparacoes[] = new int[n];
-     	int trocas[] = new int[n];
+     	long tempos[] = new long[n];
+     	long comparacoes[] = new long[n];
+     	long trocas[] = new long[n];
      	
      	for(int i = 0;i < n; i++) {
             arrayRandom = vet.Vetor(tamArray);

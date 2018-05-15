@@ -2,9 +2,9 @@ package sorts;
 
 public class BubbleSort {
 
-	public int comparacoes = 0;
+	public long comparacoes = 0;
 	public long tempo;
-	public int trocas = 0;
+	public long trocas = 0;
 	
 	public void bubbleSort(int arr[])
 	    {
@@ -27,19 +27,19 @@ public class BubbleSort {
 	        tempo = (fim - inicio);
 	    }
 	 
-	public int getComparacoes() {
-		int result = comparacoes;
+	public long getComparacoes() {
+		long result = comparacoes;
 		comparacoes = 0;
 		return result;
 	}
 	
-	public int getTrocas() {
-		int result = trocas;
+	public long getTrocas() {
+		long result = trocas;
 		trocas = 0;
 		return result;
 	}
 
-	public int getTempo() {
+	public long getTempo() {
 		return (int)tempo;
 	}
 
