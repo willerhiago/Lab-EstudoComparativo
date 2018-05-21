@@ -29,7 +29,7 @@ public class SelectionSort {
 	            }
 	            // Swap the found minimum element with the first
 	            // element
-	            trocas++;
+	            if(min_idx != i)trocas++;
 	            int temp = arr[min_idx];
 	            arr[min_idx] = arr[i];
 	            arr[i] = temp;

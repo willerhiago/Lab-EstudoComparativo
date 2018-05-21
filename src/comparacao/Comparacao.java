@@ -46,10 +46,13 @@ public class Comparacao {
         for(int i =0;i <n;i++) {
         	bubble.bubbleSort(arrayMelhor);
             tempos[i] = bubble.getTempo();
+            bubble.getComparacoes();
+            bubble.getTrocas();
      	}
         calculo.calculaMediaEDesvio(tempos);
     	mediaTempo = calculo.getMedia();
     	desvioTempo = calculo.getDesvioPadrao();
+    	bubble.bubbleSort(arrayMelhor);
         System.out.println("\nMelhorCaso\nComparacoes- Media: "+bubble.getComparacoes()+" Desvio: 0");
      	System.out.println("Tempo- Media: "+mediaTempo+" Desvio: "+desvioTempo);
      	System.out.println("Trocas- Media: "+bubble.getTrocas()+" Desvio: 0");
@@ -57,10 +60,13 @@ public class Comparacao {
     	for(int i =0;i <n;i++) {
         	bubble.bubbleSort(arrayPior);
         	tempos[i] = bubble.getTempo();
+        	 bubble.getComparacoes();
+             bubble.getTrocas();
      	}
     	calculo.calculaMediaEDesvio(tempos);
     	mediaTempo = calculo.getMedia();
     	desvioTempo = calculo.getDesvioPadrao();
+    	bubble.bubbleSort(arrayPior);
     	System.out.println("\nPiorCaso\nComparacoes- Media: "+bubble.getComparacoes()+" Desvio: 0");
      	System.out.println("Tempo- Media: "+mediaTempo+" Desvio: "+ desvioTempo);
      	System.out.println("Trocas- Media: "+bubble.getTrocas()+" Desvio: 0");
@@ -121,10 +127,13 @@ public class Comparacao {
         for(int i =0;i <n;i++) {
         	heap.sort(arrayMelhor);
             tempos[i] = heap.getTempo();
+            heap.getComparacoes();
+            heap.getTrocas();
      	}
         calculo.calculaMediaEDesvio(tempos);
     	mediaTempo = calculo.getMedia();
     	desvioTempo = calculo.getDesvioPadrao();
+    	heap.sort(arrayMelhor);
         System.out.println("\nMelhorCaso\nComparacoes- Media: "+heap.getComparacoes()+" Desvio: 0");
      	System.out.println("Tempo- Media: "+mediaTempo+" Desvio: "+desvioTempo);
      	System.out.println("Trocas- Media: "+heap.getTrocas()+" Desvio: 0");
@@ -133,10 +142,13 @@ public class Comparacao {
      	for(int i =0;i <n;i++) {
         	heap.sort(arrayPior);
             tempos[i] = heap.getTempo();
+            heap.getComparacoes();
+            heap.getTrocas();
      	}
      	calculo.calculaMediaEDesvio(tempos);
     	mediaTempo = calculo.getMedia();
     	desvioTempo = calculo.getDesvioPadrao();
+    	heap.sort(arrayPior);
     	System.out.println("\nPiorCaso\nComparacoes- Media: "+heap.getComparacoes()+" Desvio: 0");
      	System.out.println("Tempo- Media: "+mediaTempo+" Desvio: "+desvioTempo);
      	System.out.println("Trocas- Media: "+heap.getTrocas()+" Desvio: 0");
@@ -197,10 +209,13 @@ public class Comparacao {
         for(int i =0;i <n;i++) {
         	insertion.sort(arrayMelhor);
             tempos[i] = insertion.getTempo();
+            insertion.getComparacoes();
+            insertion.getTrocas();
      	}
         calculo.calculaMediaEDesvio(tempos);
     	mediaTempo = calculo.getMedia();
     	desvioTempo = calculo.getDesvioPadrao();
+    	insertion.sort(arrayMelhor);
     	System.out.println("\nMelhorCaso\nComparacoes- Media: "+insertion.getComparacoes()+" Desvio: 0");
      	System.out.println("Tempo- Media: "+mediaTempo+" Desvio: "+desvioTempo);
      	System.out.println("Trocas- Media: "+insertion.getTrocas()+" Desvio: 0");
@@ -209,10 +224,13 @@ public class Comparacao {
      	for(int i =0;i <n;i++) {
         	insertion.sort(arrayPior);
             tempos[i] = insertion.getTempo();
+            insertion.getComparacoes();
+            insertion.getTrocas();
      	}
         calculo.calculaMediaEDesvio(tempos);
     	mediaTempo = calculo.getMedia();
     	desvioTempo = calculo.getDesvioPadrao();
+    	insertion.sort(arrayPior);
     	System.out.println("\nPiorCaso\nComparacoes- Media: "+insertion.getComparacoes()+" Desvio: 0");
      	System.out.println("Tempo- Media: "+mediaTempo+" Desvio: "+desvioTempo);
      	System.out.println("Trocas- Media: "+insertion.getTrocas()+" Desvio: 0");
@@ -278,10 +296,13 @@ public class Comparacao {
         for(int i =0;i <n;i++) {
         	merge.sort(arrayMelhor);
             tempos[i] = merge.getTempo();
+            merge.getComparacoes();
+            merge.getTrocas();
      	}
         calculo.calculaMediaEDesvio(tempos);
     	mediaTempo = calculo.getMedia();
     	desvioTempo = calculo.getDesvioPadrao();
+    	merge.sort(arrayMelhor);
         System.out.println("\nMelhorCaso\nComparacoes- Media: "+merge.getComparacoes()+" Desvio: 0");
      	System.out.println("Tempo- Media: "+mediaTempo+" Desvio: "+desvioTempo);
      	System.out.println("Trocas- Media: "+merge.getTrocas()+" Desvio: 0");
@@ -289,10 +310,13 @@ public class Comparacao {
      	 for(int i =0;i <n;i++) {
          	merge.sort(arrayPior);
              tempos[i] = merge.getTempo();
+             merge.getComparacoes();
+             merge.getTrocas();
       	}
          calculo.calculaMediaEDesvio(tempos);
      	mediaTempo = calculo.getMedia();
      	desvioTempo = calculo.getDesvioPadrao();
+     	merge.sort(arrayPior);
      	System.out.println("\nPiorCaso\nComparacoes- Media: "+merge.getComparacoes()+" Desvio: 0");
      	System.out.println("Tempo- Media: "+mediaTempo+" Desvio: "+desvioTempo);
      	System.out.println("Trocas- Media: "+merge.getTrocas()+" Desvio: 0");
@@ -356,10 +380,13 @@ public class Comparacao {
         for(int i =0;i <n;i++) {
         	quick.sort(arrayMelhor,0,tamArray - 1);
             tempos[i] = quick.getTempo();
+            quick.getComparacoes();
+            quick.getTrocas();
      	}
         calculo.calculaMediaEDesvio(tempos);
     	mediaTempo = calculo.getMedia();
     	desvioTempo = calculo.getDesvioPadrao();
+    	quick.sort(arrayMelhor,0,tamArray - 1);
         System.out.println("\nMelhorCaso\nComparacoes- Media: "+quick.getComparacoes()+" Desvio: 0");
      	System.out.println("Tempo- Media: "+mediaTempo+" Desvio: "+desvioTempo);
      	System.out.println("Trocas- Media: "+quick.getTrocas()+" Desvio: 0");
@@ -367,10 +394,13 @@ public class Comparacao {
      	for(int i =0;i <n;i++) {
         	quick.sort(arrayPior,0,tamArray - 1);
             tempos[i] = quick.getTempo();
+            quick.getComparacoes();
+            quick.getTrocas();
      	}
         calculo.calculaMediaEDesvio(tempos);
     	mediaTempo = calculo.getMedia();
     	desvioTempo = calculo.getDesvioPadrao();
+    	quick.sort(arrayPior,0,tamArray - 1);
     	System.out.println("\nPiorCaso\nComparacoes- Media: "+quick.getComparacoes()+" Desvio: 0");
      	System.out.println("Tempo- Media: "+mediaTempo+" Desvio: "+desvioTempo);
      	System.out.println("Trocas- Media: "+quick.getTrocas()+" Desvio: 0");
@@ -436,10 +466,13 @@ public class Comparacao {
         for(int i =0;i <n;i++) {
         	selection.sort(arrayMelhor);
             tempos[i] = selection.getTempo();
+            selection.getComparacoes();
+            selection.getTrocas();
      	}
         calculo.calculaMediaEDesvio(tempos);
     	mediaTempo = calculo.getMedia();
     	desvioTempo = calculo.getDesvioPadrao();
+    	selection.sort(arrayMelhor);
         System.out.println("\nMelhorCaso\nComparacoes- Media: "+selection.getComparacoes()+" Desvio: 0");
      	System.out.println("Tempo- Media: "+mediaTempo+" Desvio: "+desvioTempo);
      	System.out.println("Trocas- Media: "+selection.getTrocas()+" Desvio: 0");
@@ -447,10 +480,13 @@ public class Comparacao {
      	for(int i =0;i <n;i++) {
         	selection.sort(arrayPior);
             tempos[i] = selection.getTempo();
+            selection.getComparacoes();
+            selection.getTrocas();
      	}
         calculo.calculaMediaEDesvio(tempos);
     	mediaTempo = calculo.getMedia();
     	desvioTempo = calculo.getDesvioPadrao();
+    	selection.sort(arrayPior);
     	System.out.println("\nPiorCaso\nComparacoes- Media: "+selection.getComparacoes()+" Desvio: 0");
      	System.out.println("Tempo- Media: "+mediaTempo+" Desvio: "+desvioTempo);
      	System.out.println("Trocas- Media: "+selection.getTrocas()+" Desvio: 0");
@@ -516,10 +552,13 @@ public class Comparacao {
         for(int i =0;i <n;i++) {
         	shell.sort(arrayMelhor);
             tempos[i] = shell.getTempo();
+            shell.getTrocas();
+            shell.getComparacoes();
      	}
         calculo.calculaMediaEDesvio(tempos);
     	mediaTempo = calculo.getMedia();
     	desvioTempo = calculo.getDesvioPadrao();
+    	shell.sort(arrayMelhor);
         System.out.println("\nMelhorCaso\nComparacoes- Media: "+shell.getComparacoes()+" Desvio: 0");
      	System.out.println("Tempo- Media: "+mediaTempo+" Desvio: "+desvioTempo);
      	System.out.println("Trocas- Media: "+shell.getTrocas()+" Desvio: 0");
@@ -527,10 +566,13 @@ public class Comparacao {
      	for(int i =0;i <n;i++) {
         	shell.sort(arrayPior);
             tempos[i] = shell.getTempo();
+            shell.getTrocas();
+            shell.getComparacoes();
      	}
         calculo.calculaMediaEDesvio(tempos);
     	mediaTempo = calculo.getMedia();
     	desvioTempo = calculo.getDesvioPadrao();
+    	shell.sort(arrayPior);
      	System.out.println("\nPiorCaso\nComparacoes- Media: "+shell.getComparacoes()+" Desvio: 0");
      	System.out.println("Tempo- Media: "+mediaTempo+" Desvio: "+desvioTempo);
      	System.out.println("Trocas- Media: "+shell.getTrocas()+" Desvio: 0");
