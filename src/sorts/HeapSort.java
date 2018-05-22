@@ -24,6 +24,8 @@ public class HeapSort {
 
 	public void sort(int arr[])
     {
+		this.trocas = 0;
+ 		this.comparacoes = 0;
 		long inicio = System.currentTimeMillis();
         int n = arr.length;
  

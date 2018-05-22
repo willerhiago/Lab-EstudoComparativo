@@ -14,6 +14,8 @@ public class InsertionSort {
 	/*Function to sort array using insertion sort*/
     public void sort(int arr[])
     {
+		this.trocas = 0;
+ 		this.comparacoes = 0;
     	long a = System.currentTimeMillis();
         int n = arr.length;
         for (int i=1; i<n; ++i)

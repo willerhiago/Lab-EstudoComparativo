@@ -8,6 +8,8 @@ public class BubbleSort {
 	
 	public void bubbleSort(int arr[])
 	    {
+			this.trocas = 0;
+	 		this.comparacoes = 0;
 		 	long inicio = System.currentTimeMillis();
 		 	int n = arr.length;
 	        for (int i = 0; i < n-1; i++)

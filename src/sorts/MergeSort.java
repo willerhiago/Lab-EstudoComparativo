@@ -49,13 +49,13 @@ public class MergeSort {
 	            	
 	                if(comparacoes++ > -1 && left[i] < right[j])
 	                {
-	                	trocas++;
+		            	trocas++;
 	                	array[k] = left[i];
 	                    i++;
 	                }
 	                else
-	                {   
-	                	trocas++;
+	                { 	
+	                	trocas++;		                	
 	                    array[k] = right[j];
 	                    j++;
 	                }
@@ -88,6 +88,8 @@ public class MergeSort {
 	}
 	
 	public void sort(int[] array) {
+		this.trocas = 0;
+ 		this.comparacoes = 0;
 		long inicio = System.currentTimeMillis();
 		mSort(array);
 		long fim = System.currentTimeMillis();
