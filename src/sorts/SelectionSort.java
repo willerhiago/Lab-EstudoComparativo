@@ -13,6 +13,8 @@ public class SelectionSort {
 	}
 	 public void sort(int arr[])
 	    {
+		 	this.trocas = 0;
+		 	this.comparacoes = 0;
 		 	long inicio = System.currentTimeMillis();
 	        int n = arr.length;
 	 
@@ -29,10 +31,13 @@ public class SelectionSort {
 	            }
 	            // Swap the found minimum element with the first
 	            // element
-	            trocas++;
-	            int temp = arr[min_idx];
-	            arr[min_idx] = arr[i];
-	            arr[i] = temp;
+	            if(min_idx != i) {
+	            	trocas++;
+	            	int temp = arr[min_idx];
+		            arr[min_idx] = arr[i];
+		            arr[i] = temp;
+	            }
+	            
 	        }
 		 	long fim = System.currentTimeMillis();
 		 	tempo = (fim - inicio);

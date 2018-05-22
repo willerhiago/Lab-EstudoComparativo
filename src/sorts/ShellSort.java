@@ -33,6 +33,8 @@ public class ShellSort {
     /* function to sort arr using shellSort */
     public int sort(int arr[])
     {	
+		this.trocas = 0;
+ 		this.comparacoes = 0;
     	long inicio = System.currentTimeMillis();
         int n = arr.length;
  

@@ -2,12 +2,12 @@ package comparacao;
 
 public class Calculo {
 	
-	private int[] valores;
+	private long[] valores;
 	private long media;
 	private long desvioPadrao;
 	private long qntElem;
 	
-	public void calculaMediaEDesvio(int[] valores) {
+	public void calculaMediaEDesvio(long[] valores) {
 		this.valores = valores;
 		this.qntElem = valores.length;
 		long soma = 0;
@@ -20,7 +20,7 @@ public class Calculo {
 	
 	private void calculaDesvio() {
 		double somaVariancia = 0;
-		long variacao;
+		double variacao;
 		
 		for(int i = 0; i < qntElem;i++){
 			variacao = valores[i] - this.media;
@@ -32,7 +32,7 @@ public class Calculo {
 
 	
 	//--------------------------------Getters
-	public int[] getValores() {
+	public long[] getValores() {
 		return valores;
 	}
 

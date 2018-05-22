@@ -2,12 +2,14 @@ package sorts;
 
 public class BubbleSort {
 
-	public int comparacoes = 0;
+	public long comparacoes = 0;
 	public long tempo;
-	public int trocas = 0;
+	public long trocas = 0;
 	
 	public void bubbleSort(int arr[])
 	    {
+			this.trocas = 0;
+	 		this.comparacoes = 0;
 		 	long inicio = System.currentTimeMillis();
 		 	int n = arr.length;
 	        for (int i = 0; i < n-1; i++)
@@ -27,19 +29,19 @@ public class BubbleSort {
 	        tempo = (fim - inicio);
 	    }
 	 
-	public int getComparacoes() {
-		int result = comparacoes;
+	public long getComparacoes() {
+		long result = comparacoes;
 		comparacoes = 0;
 		return result;
 	}
 	
-	public int getTrocas() {
-		int result = trocas;
+	public long getTrocas() {
+		long result = trocas;
 		trocas = 0;
 		return result;
 	}
 
-	public int getTempo() {
+	public long getTempo() {
 		return (int)tempo;
 	}
 

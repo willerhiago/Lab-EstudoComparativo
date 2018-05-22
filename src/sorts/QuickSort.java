@@ -7,8 +7,7 @@ public class QuickSort {
     
     public int comparacoes = 0;
 	public long tempo = 0;
-	public int trocas = 0;
- 
+	public int trocas = 0; 
     
 	public int[] sort(int[] inputArr) {
 		
@@ -67,6 +66,8 @@ public class QuickSort {
         }
  
     }
+
+     
     public int getComparacoes() {
     	int result = comparacoes;
 		comparacoes = 0;
@@ -84,3 +85,5 @@ public class QuickSort {
 	}
 
 }
+	
+
