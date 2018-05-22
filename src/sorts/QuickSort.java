@@ -1,54 +1,75 @@
 package sorts;
 
 public class QuickSort {
-
-	public int comparacoes = 0;
+	 
+    private int array[];
+    private int length;
+    
+    public int comparacoes = 0;
 	public long tempo = 0;
 	public int trocas = 0;
-	
-	public int getTrocas() {
-		int result = trocas;
-		trocas = 0;
-		return result;
-	}
-	/* This function takes last element as pivot,
-    places the pivot element at its correct
-    position in sorted array, and places all
-    smaller (smaller than pivot) to left of
-    pivot and all greater elements to right
-    of pivot */
-    private int partition(int arr[], int low, int high)
-    {
-        int pivot = arr[high];
-        int i = (low-1); // index of smaller element
-        for (int j=low; j<=high-1; j++)
-        {
-            // If current element is smaller than or
-            // equal to pivot
-        	
-            if (comparacoes++ > -1 && arr[j] <= pivot)
-            {
+ 
+    
+	public int[] sort(int[] inputArr) {
+		
+		this.trocas = 0;
+		this.comparacoes = 0;
+        if (inputArr == null || inputArr.length == 0) return null;
+        long inicio = System.currentTimeMillis();
+        this.array = inputArr;
+        length = inputArr.length;
+        quickSort(0, length - 1);
+        long fim = System.currentTimeMillis();
+        this.tempo = (fim - inicio);
+        return inputArr;
+    }
+ 
+    private void quickSort(int lowerIndex, int higherIndex) {
+ 
+        int i = lowerIndex;
+        int j = higherIndex;
+        int pivot = array[lowerIndex+(higherIndex-lowerIndex)/2];
+ 
+        while (i <= j) {
+ 
+            while (++comparacoes >= -1 && array[i] < pivot) { // comparando
+ 
                 i++;
-                trocas++;
-                // swap arr[i] and arr[j]
-                int temp = arr[i];
-                arr[i] = arr[j];
-                arr[j] = temp;
+            }
+ 
+            while (++comparacoes >= -1 && array[j] > pivot) { // comparando
+ 
+                j--;
+            }
+ 
+            if (i <= j) {
+                exchangeNumbers(i, j);
+ 
+                i++;
+                j--;
             }
         }
  
-        // swap arr[i+1] and arr[high] (or pivot)
-        trocas++;
-        int temp = arr[i+1];
-        arr[i+1] = arr[high];
-        arr[high] = temp;
+        if (lowerIndex < j)
+            quickSort(lowerIndex, j);
  
-        return i+1;
+        if (i < higherIndex)
+            quickSort(i, higherIndex);
     }
  
+    private void exchangeNumbers(int i, int j) {
+ 
+        if(i!=j){ 
+        	trocas++;
+            int temp = array[i];
+            array[i] = array[j];
+            array[j] = temp;
+        }
+ 
+    }
     public int getComparacoes() {
     	int result = comparacoes;
-    	comparacoes = 0;
+		comparacoes = 0;
 		return result;
 	}
 
@@ -56,29 +77,10 @@ public class QuickSort {
 		return (int)tempo;
 	}
 
-	/* The main function that implements QuickSort()
-    arr[] --> Array to be sorted,
-    low --> Starting index,
-    high --> Ending index */
-    private void qSort(int arr[], int low, int high)
-    {
-        if (low < high)
-        {
-            /* pi is partitioning index, arr[pi] is
-            now at right place */
-            int pi = partition(arr, low, high);
- 
-            // Recursively sort elements before
-            // partition and after partition
-            qSort(arr, low, pi-1);
-            qSort(arr, pi+1, high);
-        }
-    }
-    
-    public void sort(int arr[], int low, int high) {
-    	long inicio = System.currentTimeMillis();
-    	qSort(arr,low,high);
-    	long fim = System.currentTimeMillis();
-    	tempo = (fim - inicio);
-    }
+	public int getTrocas() {
+		int result = trocas;
+		trocas = 0;
+		return result;
+	}
+
 }

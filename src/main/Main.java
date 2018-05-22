@@ -17,6 +17,6 @@ public class Main {
     	//comp.merge(tamArray, n);
     	//comp.quick(tamArray, n);
     	//comp.selection(tamArray, n);
-    	comp.shell(tamArray, n);
+    	comp.quick(tamArray, n);
     }
 }

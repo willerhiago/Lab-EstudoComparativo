@@ -245,12 +245,12 @@ public class Comparacao {
     	
         System.out.println("--------------------------Quick------------------------");
         System.out.println("Tamanho Array: " + tamArray );
-        quick.sort(arrayMelhor,0,tamArray);
+        quick.sort(arrayMelhor);
         System.out.println("\nMelhorCaso\nComparacoes- Media: "+quick.getComparacoes()+" Desvio: 0");
      	System.out.println("Tempo- Media: "+quick.getTempo()+" Desvio: 0");
      	System.out.println("Trocas- Media: "+quick.getTrocas()+" Desvio: 0");
     	
-    	quick.sort(arrayPior,0,tamArray);
+    	quick.sort(arrayPior);
     	System.out.println("\nPiorCaso\nComparacoes- Media: "+quick.getComparacoes()+" Desvio: 0");
      	System.out.println("Tempo- Media: "+quick.getTempo()+" Desvio: 0");
      	System.out.println("Trocas- Media: "+quick.getTrocas()+" Desvio: 0");
@@ -263,7 +263,7 @@ public class Comparacao {
      	
      	for(int i = 0;i < n; i++) {
             arrayRandom = vet.Vetor(tamArray);
-            quick.sort(arrayRandom,0,tamArray);
+            quick.sort(arrayRandom);
      		tempos[i] = quick.getTempo();
             comparacoes[i] = quick.getComparacoes();
             trocas[i] = quick.getTrocas();
